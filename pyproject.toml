@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uuv-navigation-reference"
+version = "0.1.0"
+description = "Candidate-based underwater navigation method reference"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "torch"]
+
+[tool.setuptools.packages.find]
+include = ["uuv_navigation*"]
